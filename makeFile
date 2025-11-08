@@ -1,0 +1,2 @@
+library:gcc src/main.c src/books.c src/users.c src/borrow.c -o library
+run:./library   # Windows: .\library.exe
