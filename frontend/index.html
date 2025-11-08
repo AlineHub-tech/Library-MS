@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>📚 Library Management System</h1>
+</header>
+
+<div class="container">
+
+<!-- Add / Edit Book -->
+<section class="card">
+<h2>Books</h2>
+<input type="text" id="bookTitle" placeholder="Book Title">
+<input type="text" id="bookAuthor" placeholder="Author">
+<input type="number" id="bookCopies" placeholder="Copies">
+<button id="bookActionBtn" onclick="addBook()">Add Book</button>
+<h3>Books List</h3>
+<table id="booksTable">
+    <thead>
+        <tr><th>Title</th><th>Author</th><th>Copies</th><th>Action</th></tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</section>
+
+<!-- Add / Edit User -->
+<section class="card">
+<h2>Users</h2>
+<input type="text" id="userName" placeholder="Name">
+<input type="email" id="userEmail" placeholder="Email">
+<button id="userActionBtn" onclick="addUser()">Add User</button>
+<h3>Users List</h3>
+<table id="usersTable">
+    <thead>
+        <tr><th>Name</th><th>Email</th><th>Action</th></tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</section>
+
+<!-- Borrow / Return -->
+<section class="card">
+<h2>Borrow / Return Book</h2>
+<input type="text" id="borrowUser" placeholder="User Name">
+<input type="text" id="borrowBook" placeholder="Book Title">
+<button onclick="borrowBook()">Borrow</button>
+<button onclick="returnBook()">Return</button>
+<h3>Borrowed Books</h3>
+<table id="borrowedTable">
+    <thead>
+        <tr><th>User</th><th>Book</th></tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</section>
+</div>
+<footer>
+<p>&copy; 2025 Library Management System</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
